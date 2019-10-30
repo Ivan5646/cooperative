@@ -1,0 +1,26 @@
+.description {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    &__img {
+		background-image: url(../../img/facade.png);
+        background-repeat: no-repeat;
+        height: 552px;
+    }
+
+    &__info-img {
+        background-image: url(../../img/people-circle.svg);
+        background-repeat: no-repeat;
+        width: 64px;
+        height: 64px;
+
+        &--scale {
+            background-image: url(../../img/scale.svg);
+        }
+
+        &--trapezium {
+            background-image: url(../../img/trapezium.svg);
+        }
+    }
+
+}

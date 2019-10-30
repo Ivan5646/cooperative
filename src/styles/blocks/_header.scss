@@ -1,3 +1,25 @@
 .header {
-	
+	display: grid;
+	grid-template-columns: 20% auto 20%;
+	min-height: 160px;
+	align-items: center;
+
+	&__logo {
+		background-image: url(../../img/logo.png);
+		background-repeat: no-repeat;
+		height: 120px;
+	}
+
+	&__menu {
+		display: flex;
+		list-style-type: none;
+
+		li:not(:last-child) {
+			margin-right: 10px;
+		}
+	}
+
+	&__contacts {
+		color: #42a959;
+	}
 }
