@@ -1,0 +1,21 @@
+
+ - Done. test vendor css (bootrstrap) and js (carousel) 
+ - keep images(done) and fonts(done) in src?
+
+
+
+Ptoblems.
+
+Notes on bundler.
+Use _styleBlock.scss so the scss file won't processed by gulp. This way only one contanetaed scss file will be in build.
+Production build command is 'gulp build-prod'.
+
+
+
+
+ Environment does not reload style cnahges.
+
+
+Other problems
+gulp not a command. Solution: npm install --global gulp-cli
+
