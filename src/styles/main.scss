@@ -1,10 +1,20 @@
 @import 'blocks/_header';
 @import 'blocks/_description';
-
+@import 'blocks/_warranty';
 
 @font-face {
-    font-family: "Roboto";
+    font-family: "RobotoRegular";
     src: url(../fonts/roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "RobotoLight";
+    src: url(../fonts/roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: "RobotoMedium";
+    src: url(../fonts/roboto/Roboto-Medium.ttf);
 }
 
 textarea, input, button { outline: none; }
@@ -18,7 +28,15 @@ textarea, input, button { outline: none; }
 }
 
 body {
-	font-family: Roboto, serif;    //Georgia_Regular;   
+	font-family: RobotoRegular, serif;    //Georgia_Regular;   
+}
+
+h1, h2, h3, h4, p {
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 54px;
 }
 
 .btn {
