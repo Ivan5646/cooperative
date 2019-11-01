@@ -2,6 +2,8 @@
 @import 'blocks/_description';
 @import 'blocks/_warranty';
 @import 'blocks/_advantages';
+@import 'blocks/_programs';
+@import 'blocks/_footer';
 
 @font-face {
     font-family: "RobotoRegular";
@@ -21,6 +23,11 @@
 @font-face {
     font-family: "RobotoThin";
     src: url(../fonts/roboto/Roboto-Thin.ttf);
+}
+
+@font-face {
+    font-family: "RobotoBold";
+    src: url(../fonts/roboto/Roboto-Bold.ttf);
 }
 
 textarea, input, button { outline: none; }
@@ -47,6 +54,10 @@ h2 {
 
 h3 {
     font-size: 36px;
+}
+
+h4 {
+    font-size: 24px;
 }
 
 .btn {

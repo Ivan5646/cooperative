@@ -1,0 +1,113 @@
+.footer {
+    background-color: #000;
+    color: #fff;
+
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    &__wrapper {
+        padding-top: 62px;
+        padding-bottom: 48px;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 53px;
+    }
+
+    &__menu {
+        list-style-type: none;
+        padding-left: 0;
+        font-size: 16px;
+        text-transform: uppercase;
+
+        li:not(:last-child) {
+            margin-bottom: 24px;
+        }
+    }
+
+    &__logo {
+        background-image: url(../../img/logo_footer.png);
+        background-repeat: no-repeat;
+        width: 238px;
+        height: 168px;
+    }
+
+    &__contacts {
+        font-size: 24px;
+        font-family: RobotoBold, serif;
+    }
+
+    &__bottom {
+        display: flex;
+        max-width: 715px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        line-height: 30px;
+        text-align: center;
+
+        a {
+            font-size: 16px;
+
+            &:not(:last-child) {
+                margin-right: 24px;
+            }
+        }
+    }
+
+    @media (max-width: 768px) { 
+        &__wrapper {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        &__menu, &__bottom a { 
+            font-size: 13px;
+        }
+
+        &__contacts {
+            font-size: 19px;
+        }
+
+        &__logo {
+            width: 180px;
+            height: 136px;
+            background-size: contain;
+        }
+
+        &__bottom {
+            max-width: 581px;
+
+            a {
+                &:not(:last-child) {
+                    margin-right: 18px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 576px) { 
+        &__top {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+
+        &__menu {
+            text-align: center;
+
+            a {
+                &:not(:last-child) {
+                    margin-right: 14px;
+                }
+            }
+        }
+
+        &__contacts {
+            display: none;
+        }
+    }
+}
