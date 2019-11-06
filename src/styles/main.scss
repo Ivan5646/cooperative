@@ -1,6 +1,7 @@
 @import 'blocks/_header';
-@import 'blocks/_description';
 @import 'blocks/_warranty';
+@import 'blocks/_description';
+@import 'blocks/_warranty1';
 @import 'blocks/_advantages';
 @import 'blocks/_programs';
 @import 'blocks/_footer';
@@ -53,11 +54,13 @@ h2 {
 }
 
 h3 {
-    font-size: 36px;
+    font-size: 34px;
+    font-family: RobotoBold, serif;
 }
 
 h4 {
-    font-size: 24px;
+    font-size: 32px;
+    font-family: RobotoMedium, serif;
 }
 
 .btn {

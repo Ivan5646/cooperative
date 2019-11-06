@@ -1,0 +1,51 @@
+.warranty1 {
+    margin-bottom: 130px;
+    display: none;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 54px;
+    }
+
+    &__list {
+        list-style-type: none;
+        font-size: 24px;
+        max-width: 980px;
+        font-family: RobotoThin, serif;
+
+        li {
+            margin-bottom: 34px;
+        }
+    }
+
+    &__list-img {
+        display: block;
+        background-image: url(../../img/trapezium-filled.png);
+        background-repeat: no-repeat;
+        width: 64px;
+        height: 64px;
+        margin-bottom: 30px;
+
+        &--rub {
+            background-image: url(../../img/ruble.png);
+        }
+
+        &--pen {
+            background-image: url(../../img/pen.png);
+        }
+
+        &--house {
+            background-image: url(../../img/house.png);
+        }
+
+        &--dtrapezium {
+            background-image: url(../../img/double-trapezium.png);
+            width: 103px;
+        }
+
+        &--lock {
+            background-image: url(../../img/trapezium-lock.png);
+            width: 73px;
+        }
+    }
+}
