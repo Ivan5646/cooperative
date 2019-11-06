@@ -1,7 +1,6 @@
 @import 'blocks/_header';
 @import 'blocks/_warranty';
 @import 'blocks/_description';
-@import 'blocks/_warranty1';
 @import 'blocks/_advantages';
 @import 'blocks/_programs';
 @import 'blocks/_footer';
@@ -45,7 +44,7 @@ body {
 	font-family: RobotoRegular, serif;    //Georgia_Regular;   
 }
 
-h1, h2, h3, h4, p {
+h1, h2, h3, h4, h5, p {
     margin-top: 0;
 }
 
@@ -61,6 +60,11 @@ h3 {
 h4 {
     font-size: 32px;
     font-family: RobotoMedium, serif;
+}
+
+h5 {
+    font-size: 21px;
+    font-family: RobotoBold, serif;
 }
 
 .btn {
