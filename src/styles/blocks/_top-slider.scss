@@ -1,0 +1,37 @@
+.top-slider {
+    height: 438px;
+    margin-bottom: 52px;
+
+    &__slide {
+        background-image: url(../../img/slide1.png);
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        // background-size: cover;
+        color: #fff;
+        height: 438px;
+        // max-width: 90vw;
+
+        &--cat {
+            background-image: url(../../img/cat.png);
+        }
+
+        &--office {
+            background-image: url(../../img/ladder.png);
+        }
+
+        h2 {
+            font-family: RobotoBold, serif;
+            font-size: 52px;
+            margin-top: 129px;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #fff;
+            display: inline-block;
+            padding-bottom: 8px;
+        }
+
+        p {
+            font-size: 16px;
+            max-width: 300px;
+        }
+    }
+}

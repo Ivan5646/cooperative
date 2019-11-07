@@ -27,7 +27,7 @@ gulp.task('connect', function() {
 });
 
 gulp.task('vendor-styles', function () {
-    return gulp.src([])
+    return gulp.src(['node_modules/slick-carousel/slick/slick.scss', 'node_modules/slick-carousel/slick/slick-theme.scss'])
         .pipe(concat('vendors.min.css'))
         .pipe(uglifycss())
         .pipe(gulp.dest('build/styles'));
@@ -58,7 +58,7 @@ gulp.task('styles-prod', function() {
 });
 
 gulp.task('vendor-scripts', function () {
-    return gulp.src(['node_modules/jquery/dist/jquery.js', 'node_modules/bootstrap/dist/js/bootstrap.js', 'node_modules/owl.carousel/dist/owl.carousel.js'])
+    return gulp.src(['node_modules/jquery/dist/jquery.js', 'node_modules/bootstrap/dist/js/bootstrap.js', 'node_modules/slick-carousel/slick/slick.js'])
         .pipe(concat('vendors.min.js'))
         .pipe(minify())
         .pipe(gulp.dest('build/js'));
