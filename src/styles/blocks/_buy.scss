@@ -23,16 +23,35 @@
         background-repeat: no-repeat;
         background-position: 0 50px;
         margin-bottom: 74px;
-        max-width: 720px;
+        max-width: 820px;
         box-sizing: border-box;
+        min-height: 305px;
 
         &:nth-child(odd) {
             padding-left: 396px; // 306px + 90 px
+            padding-right: 70px;
         }
 
         &:nth-child(even) {
             padding-right: 424px;
+            padding-left: 70px;
             background-position: 100% 50px;
+        }
+
+        &:nth-child(2) {
+            background-image: url(../../img/pig.png);
+        }
+
+        &:nth-child(3) {
+            background-image: url(../../img/ladder.png);
+        }
+
+        &:nth-child(4) {
+            background-image: url(../../img/office.png);
+        }
+
+        &:nth-child(5) {
+            background-image: url(../../img/cat.png);
         }
     }
 
@@ -52,5 +71,84 @@
         font-family: RobotoLight, serif;
         line-height: 29px;
         padding-left: 18px;
+    }
+
+    @media (max-width: 768px) { 
+        h2 {
+            font-size: 42px;
+            margin-bottom: 42px;
+        }
+
+        h5 {
+            font-size: 24px;
+        }
+
+        &__wrapper {
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            margin: 0 auto;
+            max-width: 640px;
+        }
+
+        &__step {
+            max-width: 300px;
+            // background-size: contain;
+            background-position: 0 0;
+            margin-bottom: 60px;
+            flex: 1 1 31%;
+
+            &:not(last-of-type) {
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+
+            &:nth-child(odd) {
+                padding: 260px 0 0 0;
+            }
+    
+            &:nth-child(even) {
+                padding: 260px 0 0 0;
+                background-position: 0 0;
+            }
+        }
+
+        &__list {
+            font-size: 14px; 
+            line-height: 24px;
+        }
+    }
+
+    @media (max-width: 576px) { 
+        h2 {
+            font-size: 24px;
+        }
+
+        &__wrapper { 
+            justify-content: center;
+        }
+
+        &__step {
+            flex: 1 1 100%;
+            margin-bottom: 50px;
+
+            &:not(last-of-type) {
+                margin-right: 0;
+                margin-left: 0;
+            }
+        }
+
+        &__num {
+            font-size: 48px;
+        }
+
+        &__subtitle {
+            font-size: 22px;
+        }
+
+        &__list {
+            font-size: 12px; 
+            line-height: 22px;
+        }
     }
 }
