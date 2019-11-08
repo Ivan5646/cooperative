@@ -26,17 +26,15 @@ $(document).ready(function () {
     }
   }));
 
-  $(".slick-active button").text = "heyy";
+  // toggle header menu on mob screen
+  var hamburger = $(".header__hamburger");
 
-  console.log("slick dot", $(".slick-active button").text);
+  hamburger.click(function() {
+    console.log("clicked");
+    var menu = $('.header__menu');
 
-  var dotNums = document.querySelectorAll(".slick-dots button");
-
-  function removeText(item) {
-    item.innerHTML = "";
-  }
-
-  dotNums.forEach(removeText);
+    menu.toggleClass('header__menu--show');
+  });
 
 });
 
