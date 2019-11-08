@@ -26,6 +26,18 @@ $(document).ready(function () {
     }
   }));
 
+  $(".slick-active button").text = "heyy";
+
+  console.log("slick dot", $(".slick-active button").text);
+
+  var dotNums = document.querySelectorAll(".slick-dots button");
+
+  function removeText(item) {
+    item.innerHTML = "";
+  }
+
+  dotNums.forEach(removeText);
+
 });
 
 
