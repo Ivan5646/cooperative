@@ -45,12 +45,9 @@ $(document).ready(function () {
     var menu = document.querySelectorAll(".header__menu li");
     menu.forEach(function (elem) {
         elem.addEventListener("click", function () {
-            console.log("menu li clicked");
             if ($(elem).hasClass('header__active-link')) {
-                console.log("has class");
 
             } else {
-                console.log("else");
                 menu.forEach(function (e) { 
                     $(e).removeClass('header__active-link');
                 })
