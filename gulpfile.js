@@ -27,7 +27,7 @@ gulp.task('connect', function() {
 });
 
 gulp.task('vendor-styles', function () {
-    return gulp.src(['node_modules/slick-carousel/slick/slick.scss', 'node_modules/slick-carousel/slick/slick-theme.scss'])
+    return gulp.src(['src/styles/normalize.css', 'node_modules/slick-carousel/slick/slick.scss', 'node_modules/slick-carousel/slick/slick-theme.scss'])
         .pipe(concat('vendors.min.css'))
         .pipe(uglifycss())
         .pipe(gulp.dest('build/styles'));

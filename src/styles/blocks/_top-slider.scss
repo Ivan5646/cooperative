@@ -28,9 +28,12 @@
             font-size: 52px;
             margin-top: 129px;
             margin-bottom: 30px;
-            border-bottom: 3px solid #fff;
+            // border-bottom: 3px solid #fff;
             display: inline-block;
             padding-bottom: 8px;
+            text-decoration: underline;
+            text-underline-position: under;
+            line-height: 49px;
         }
 
         p {
@@ -95,17 +98,29 @@
     }
 
     @media (max-width: 576px) { 
-        h2, p {
+        height: 240px;
+
+        &__slide {
+            height: 240px;
+        }
+
+        p {
             margin-left: 2%;
             max-width: 285px;
         }
 
         h2 { 
             font-size: 32px;
+            margin-top: 46px;
+            margin-left: 2%;
         }
 
         p {
             font-size: 13px;
+        }
+
+        .slick-dots { 
+            bottom: 0;
         }
     }
 }
