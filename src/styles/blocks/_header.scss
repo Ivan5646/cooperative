@@ -32,8 +32,11 @@
 	}
 
 	&__contacts {
-		color: #42a959;
-		font-size: 18px;
+		a {
+			color: #42a959;
+			font-size: 18px;
+			text-decoration: none;
+		}
 
 		div:first-of-type {
 			margin-bottom: 16px;
