@@ -35,10 +35,16 @@ $(document).ready(function () {
 
     // toggle header menu on mob screen
     var hamburger = $(".header__hamburger");
+    var close = $(".header__mob-close");
 
     hamburger.click(function () {
-        var menu = $('.header__menu');
-        menu.toggleClass('header__menu--show');
+        var menu = $('.header__mob-menu');
+        menu.toggleClass('header__mob-menu--show');
+    });
+
+    close.click(function () {
+        var menu = $('.header__mob-menu');
+        menu.toggleClass('header__mob-menu--show');
     });
 
     // highlight active menu item

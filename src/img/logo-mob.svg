@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 25" width="29" height="25">
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="M-42 -18L333 -18L333 6560L-42 6560Z" />
+		</clipPath>
+		<image width="29" height="25" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAZCAMAAAD63NUrAAAAAXNSR0IB2cksfwAAALFQTFRFAAAAWp1DWp1DWp1DWp1DXJ5DXJ5DXJ5DXJ5DXJ5DYKBDYKBDYKBDYKBDYKBDY6JCY6JCY6JCY6JCY6JCZaNCZaNCZaNCZaNCZaNCaKVCaKVCaKVCaKVCa6dCa6dCa6dCbqlBbqlBbqlBcatBcatBcatBcatBcatBcqtBcqtBcqtBcqtBcqtBcqtBcqtBcqtBcqtBcqtBcqtBcqtBcqtBcqtBcqtBcqtBcqtBcqtBcqtBv0/KUwAAADt0Uk5TADasrUAu8f/2OBrj/+oiDM//2RIDt//DBpj/pgF2/4ZW/2Q7+P/7Rybs//IvFNvjGwnF0A0Bq7geJC69R4z3AAAAg0lEQVR4nO3JVxKCMBQF0IfYsWAHu1iIFxQbWPa/MGUYJhCC4wI8v4eIUwrqR5GkSuVKqFqTZV1rRJqtbLb1TqzbE7M/GHIjQ1hznDSZpnI2T1skc7kSWTzXm61oZ8fJ9shy3CgPR0kC3inM80WawPVG5Ac5Cdx9euQmwOj5ZV///X3f9CRYBnvmz6YAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="Монтажная область 1" clip-path="url(#cp1)">
+		<g id="header">
+			<use id="Векторный смарт-объект" href="#img1" x="0" y="0" />
+		</g>
+	</g>
+</svg>
