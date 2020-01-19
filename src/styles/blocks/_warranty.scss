@@ -8,9 +8,13 @@
     &__main {
         background-image: url(../../img/big-trapezium.svg);
         background-repeat: no-repeat;
-        background-position-y: center;
-        padding-left: 402px; // 322px + 80px
+        background-size: contain;
+        padding-left: 451px;
         margin-bottom: 80px;
+    }
+
+    &__text-block {
+        margin-left: 70px;
     }
 
     &__list {
@@ -33,19 +37,27 @@
         background-image: url(../../img/bank-photo.png);
         background-repeat: no-repeat;
         width: 377px;
-        // max-width: 377px;
         height: 284px;
     }
 
     &__bank-info {
         background-image: url(../../img/rus-bank.png);
         background-repeat: no-repeat;
-        background-position: 14px 16px;
-        background-color: #b4b7b7; 
+        background-position: 60px 30px;
+        background-color: #f0f1f1;
         font-size: 18px;
-        font-family: RobotoMedium, serif;
-        width: 388px;
-        padding: 134px 16px 80px 16px;
+        font-family: RobotoMedium,serif;
+        line-height: 28px;
+        width: 467px;
+        padding: 150px 30px 40px 60px;
+        box-sizing: border-box;
+        p:last-child {
+            margin-bottom: 0;
+        }
+        & span {
+            font-size: 14px;
+            color: #0b983a;
+        }
     }
 
     h4 {
@@ -60,7 +72,7 @@
     &__advantages-img {
         background-image: url(../../img/houses.png);
         background-repeat: no-repeat;
-        width: 471px;
+        width: 377px;
         height: 647px;
     }
 
@@ -76,11 +88,32 @@
         padding-left: 0;
 
         li {
-            margin-bottom: 20px;
+            margin-bottom: 12px;
+            & a {
+                color: #0b983a;
+                border-bottom: 1px dotted #0b983a;
+                text-decoration: none;
+            }
+        }
+    }
+
+    @media (max-width: 1024px) { 
+        &__main {
+            padding-left: 334px;
+            background-size: auto;
+            background-position: 0 100%;
         }
     }
 
     @media (max-width: 992px) { 
+        &__main {
+            padding-left: 284px;
+            background-size: 250px;
+			background-position: 0 50%;
+        }
+        &__text-block {
+            margin-left: 0;
+        }
         h3 {
             margin-bottom: 36px;
         }
@@ -121,13 +154,6 @@
         }
     }
 
-    @media (max-width: 768px) { 
-        &__main { 
-            padding-left: 300px;
-            background-size: 260px;
-        }
-    }
-
     @media (max-width: 576px) { 
         &__main {
             background-image: none;
@@ -147,9 +173,11 @@
 
         &__bank-info {
             margin-left: 0;
+            padding: 150px 30px 40px 30px;
             font-size: 16px;
             width: auto;
             background-size: 276px;
+            background-position: 30px 30px;
         }
 
         &__advantages {

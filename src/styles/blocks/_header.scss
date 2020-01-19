@@ -124,6 +124,13 @@
 		}
 	}
 
+	
+	@media (max-width: 768px) {
+		&__menu {
+			font-size: 13px;
+		}
+	}
+
 	@media (max-width: 576px) { 
 		position: relative;
 		display: flex;

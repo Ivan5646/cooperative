@@ -1,126 +1,132 @@
 .top-slider {
-    height: 438px;
-    margin-bottom: 52px;
-    max-width: 1170px;
-    margin: 0 auto;
+	height: 438px;
+	margin-bottom: 52px;
+	max-width: 1170px;
+	margin: 0 auto;
 
-    &__slide {
-        background-image: url(../../img/slide1.png);
-        background-repeat: no-repeat;
-        background-position: 50% 0;
-        // background-size: cover;
-        color: #fff;
-        height: 438px;
-        // max-width: 90vw;
+	&__slide {
+		background-image: url(../../img/slide1.png);
+		background-repeat: no-repeat;
+		background-position: 50% 0;
+		color: #fff;
+		height: 438px;
+		&--cat {
+			background-image: url(../../img/cat.png);
+			background-size: cover;
+		}
 
-        &--cat {
-            background-image: url(../../img/cat.png);
-            background-size: cover;
-        }
+		&--office {
+			background-image: url(../../img/ladder.png);
+			background-size: cover;
+		}
 
-        &--office {
-            background-image: url(../../img/ladder.png);
-            background-size: cover;
-        }
+		h2 {
+			font-family: RobotoBold, serif;
+			font-size: 52px;
+			margin-bottom: 0;
+			display: inline-block;
+			padding-bottom: 23px;
+		}
 
-        h2 {
-            font-family: RobotoBold, serif;
-            font-size: 52px;
-            margin-top: 129px;
-            margin-bottom: 30px;
-            // border-bottom: 3px solid #fff;
-            display: inline-block;
-            padding-bottom: 8px;
-            text-decoration: underline;
-            text-underline-position: under;
-            line-height: 49px;
-        }
-
-        p {
+		p {
+            margin: 0;
+            margin-top: 10px;
             font-size: 16px;
-            max-width: 300px;
-        }
-    }
+            line-height: 26px;
+		}
+	}
 
-    .slick-dots {
-        bottom: 40px;
-        // right: 290px;
-        // right: 10%;
-        left: 90%;
-        transform: translateX(-80%);
-        width: 20px;
-        // background-color: purple;
+	&__text-wrap {
+		max-width: 730px;
+		margin-top: 125px;
+	}
 
-        li {
-            margin-bottom: 15px;
+	&__text-header {
+		border-bottom: 5px solid #fff;
+	}
 
-            button {
-                font-size: 0;
-                line-height: 0;
-                display: block;
-                width: 20px;
-                height: 20px;
-                padding: 5px;
-                cursor: pointer;
-                color: transparent;
-                border: 0;
-                outline: none;
-                background: transparent;
-                position: relative;
-        
-                &:before {
-                    background-image: url(../../img/dot-polygon.svg);
-                    background-repeat: no-repeat;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 13px;
-                    height: 14px;
-                    content: '';
-                    text-align: center;
-                }
+	.slick-dots {
+		bottom: 40px;
+		left: 90%;
+		transform: translateX(-80%);
+		width: 20px;
+
+		li {
+			margin-bottom: 15px;
+
+			button {
+				font-size: 0;
+				line-height: 0;
+				display: block;
+				width: 20px;
+				height: 20px;
+				padding: 5px;
+				cursor: pointer;
+				color: transparent;
+				border: 0;
+				outline: none;
+				background: transparent;
+				position: relative;
+
+				&:before {
+					background-image: url(../../img/dot-polygon.svg);
+					background-repeat: no-repeat;
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 13px;
+					height: 14px;
+					content: "";
+					text-align: center;
+				}
+			}
+
+			&.slick-active {
+				button {
+					&:before {
+						background-image: url(../../img/dot-polygon-active.svg);
+					}
+				}
+			}
+		}
+	}
+
+	@media (max-width: 768px) {
+        &__text-wrap {
+            max-width: 520px;
+            & h2 {
+                font-size: 40px;
             }
-
-            &.slick-active {
-                button {
-                    &:before { 
-                        background-image: url(../../img/dot-polygon-active.svg);
-                    }
-                }
-            }
         }
-    } 
+	}
 
-    @media (max-width: 768px) { 
-        h2, p {
-            margin-left: 80px;
+	@media (max-width: 576px) {
+		height: 240px;
+
+		&__slide {
+			height: 240px;
         }
-    }
-
-    @media (max-width: 576px) { 
-        height: 240px;
-
-        &__slide {
-            height: 240px;
+        &__text-wrap {
+            max-width: 86%;
+            margin-top: 30px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        &__text-header {
+            border-bottom: 3px solid #fff;
         }
 
-        p {
-            margin-left: 2%;
-            max-width: 285px;
-        }
+		h2 {
+			font-size: 24px;
+		}
 
-        h2 { 
-            font-size: 32px;
-            margin-top: 46px;
-            margin-left: 2%;
-        }
-
-        p {
+		p {
             font-size: 13px;
-        }
+            line-height: 17px;
+		}
 
-        .slick-dots { 
-            bottom: 0;
-        }
-    }
+		.slick-dots {
+			bottom: 0;
+		}
+	}
 }

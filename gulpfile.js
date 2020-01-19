@@ -77,6 +77,11 @@ gulp.task('build-images', function() {
         .pipe(gulp.dest('build/img'));
 });
 
+gulp.task('build-docs', function() {
+    return gulp.src('src/docs/**/*.*')
+        .pipe(gulp.dest('build/docs'));
+});
+
 // gulp.task('build-images', function() { // compress for production
 //     gulp.src('src/img/*')
 //         .pipe(imagemin([
@@ -113,13 +118,13 @@ gulp.task('clean', function () {
 gulp.task('build', function(callback) {
     runSequence('clean',
         ['vendor-styles', 'vendor-scripts', 'app-styles', 'app-scripts', 'build-images', 'build-fonts'],
-        'index', callback);
+        'index', 'build-docs', callback);
 });
 
 gulp.task('build-prod', function(callback) {
     runSequence('clean',
         ['vendor-styles', 'vendor-scripts', 'styles-prod', 'app-scripts', 'build-images', 'build-fonts'],
-        'index', callback);
+        'index', 'build-docs', callback);
 });
 
 gulp.task('watch', function () {
@@ -128,10 +133,12 @@ gulp.task('watch', function () {
     var index = ['index'];
     var buildImages = ['build-images'];
     var buildFonts = ['build-fonts'];
+    var buildDocs = ['build-docs'];
 
     gulp.watch('src/styles/**/*.scss', appStyles);
     gulp.watch('src/js/*.js', appScripts);
     gulp.watch('src/img/**/*', buildImages);
+    gulp.watch('src/docs/**/*', buildDocs);
     gulp.watch('src/fonts/**/*', buildFonts);
     gulp.watch('src/index.html', index);
 });
