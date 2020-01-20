@@ -54,9 +54,10 @@
         p:last-child {
             margin-bottom: 0;
         }
-        & span {
+        & a {
             font-size: 14px;
             color: #0b983a;
+            text-decoration: none;
         }
     }
 
